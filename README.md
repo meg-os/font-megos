@@ -21,7 +21,7 @@
 | megh0608.fnt | 6x8  | ![](images/megh0608.png) |
 | megh0606.fnt | 6x6 | ![](images/megh0606.png) |
 
-* MEG Little Terminal (C) 2002 MEG-OS Project
+* MEG Little Terminal (C) 2002, 2019 MEG-OS Project
 * ターミナル用の固定幅ファミリー、バリエーションが多めです。
 
 ## MEG Little Brave

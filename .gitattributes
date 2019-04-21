@@ -1,2 +1,4 @@
 *.fnt binary
 *.FNT binary
+include/* linguist-generated=true
+Rakefile linguist-detectable=false
