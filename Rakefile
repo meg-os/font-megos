@@ -16,24 +16,26 @@ desc "Defaults"
 task :default => [PATH_OUTPUT, :make_font].flatten
 
 def font_def(dest, src)
-  name = File.basename(dest, '.*')
+  name = File.basename(dest, '.*').upcase
   CLEAN.include dest
   file dest => src do |t|
     puts "fontconv: #{dest} <= #{src}"
     bin = File.binread(t.prerequisites[0]).unpack('C*')
     font_w = bin[14]
     font_h = bin[15]
-    font_w8 = (font_w+7)/8;
+    font_w8 = (font_w + 7) / 8;
+    font_h8 = font_w8 * font_h;
     bin.shift(17 + 32*font_w8*font_h)
     data = 96.times.map do
-      (font_w8*font_h).times.map do
+      body = font_h8.times.map do
         '0x%02x' % bin.shift()
       end.join(',')
+      "{#{body}},"
     end
     File.open(t.name, 'w') do |file|
       file.puts "// AUTO GENERATED #{name}.h"
-      file.puts "static const int #{name}_w=#{font_w}, #{name}_h=#{font_h};"
-      file.puts "static const uint8_t #{name}_data[] = {\n#{ data.join(",\n") }\n};"
+      file.puts "static const int #{name}_width = #{font_w}, #{name}_height = #{font_h};"
+      file.puts "static const uint8_t #{name}_fontdata[][#{font_h8}] = {\n#{ data.join("\n") }\n};"
     end
   end
 end
