@@ -19,7 +19,7 @@
 | ------------------------------------------------------------------------------------------------------------------------ | ---- | ------------------------------- |
 | [MEGH0816](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0816.fnt) | 8x16 | ![Preview](images/megh0816.png) |
 | [MEGH0810](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0810.fnt) | 8x10 | ![Preview](images/megh0810.png) |
-| [MEGH0610](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0610.fnt) | 6x10 | ![Preview](images/megh0610.png) |
+| [MEGH0710](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0710.fnt) | 7x10 | ![Preview](images/megh0710.png) |
 | [MEGH0608](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0608.fnt) | 6x8  | ![Preview](images/megh0608.png) |
 | [MEGH0606](https://nerry.jp/fedit95/src/#https://raw.githubusercontent.com/meg-os/font-megos/master/fontx2/megh0606.fnt) | 6x6  | ![Preview](images/megh0606.png) |
 
